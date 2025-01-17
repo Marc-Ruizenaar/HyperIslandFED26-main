@@ -3,10 +3,10 @@ import PersonalPage from "./components/PersonalPage";
 
 function App() {
   const person = {
-    name: "John",
+    name: "Marc",
     info: {
       age: 25,
-      city: "New York",
+      city: "Gouda",
       job: "Developer",
       hobbies: ["reading", "coding", "gaming"],
     },
