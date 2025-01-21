@@ -1,4 +1,5 @@
 import "./App.css";
+import APIBlock from "./components/APIBlock";
 import Form from "./components/Form";
 import PersonalPage from "./components/PersonalPage";
 
@@ -19,8 +20,15 @@ function App() {
         <h1>This is React</h1>
       </header>
       <PersonalPage person={person} />
+      <br />
+      <br />
+      <br />
 
       <Form />
+      <br />
+      <br />
+      <br />
+      <APIBlock />
     </div>
   );
 }
