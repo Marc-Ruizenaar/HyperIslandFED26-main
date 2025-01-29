@@ -1,34 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
-import APIBlock from "./components/APIBlock";
-import Form from "./components/Form";
-import PersonalPage from "./components/PersonalPage";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
-  const person = {
-    name: "Marc",
-    info: {
-      age: 25,
-      city: "Gouda",
-      job: "Developer",
-      hobbies: ["reading", "coding", "gaming"],
-    },
-  };
-
   return (
-    <div>
-      <header>
-        <h1>This is React</h1>
-      </header>
-      <PersonalPage person={person} />
-      <br />
-      <br />
-      <br />
-
-      <Form />
-      <br />
-      <br />
-      <br />
-      <APIBlock />
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
